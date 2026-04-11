@@ -6,7 +6,7 @@ As the global AI sector hits the "Grid Wall," energy has transitioned from an op
 This portfolio represents the primary digital real estate for infrastructure firms, hyperscalers, and developers bridging the gap between independent power and high-density compute.
 
 I. Delivery & Infrastructure (The Method)
-https://www.google.com/search?q=Btmcompute.com: The category-killer brand for off-grid AI data centers. Defines the vertical integration of hardware and on-site power.
+Btmcompute.com: The category-killer brand for off-grid AI data centers. Defines the vertical integration of hardware and on-site power.
 
 behindthemetersmr.com: Descriptive, high-authority terminology for the co-location of modular reactors at the point of compute.
 
