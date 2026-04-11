@@ -1,3 +1,10 @@
+# 🏛️ THE POWER ECONOMY
+### **Sovereign Infrastructure & BTM AI Prospectus (2026)**
+
+**The Power Economy** is an institutional-grade portfolio defining the convergence of **Behind-the-Meter (BTM)** power generation and **High-Density AI Compute**. As the global AI sector hits the "Grid Wall," these assets represent the primary digital real estate for grid-independent infrastructure.
+
+[ 📧 Inquire: ceallo6@proton.me ] [ 🌐 Live Portal: thepowereconomy.com ]
+
 # thepowereconomy.com
 The Power Economy | Sovereign Infrastructure &amp; BTM Compute Assets. Strategic domain prospectus defining the 2026 Energy-AI convergence. 📧 ceallo6@proton.me
 Strategic Thesis: The Power Economy
