@@ -44,7 +44,6 @@
             box-shadow: 0 8px 24px rgba(0,0,0,0.5);
         }
 
-        /* STEP 1: HERO SECTION */
         header {
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 30px;
@@ -62,7 +61,6 @@
         }
         .designed-for li::before { content: "• "; color: var(--accent-green); font-weight: bold; }
 
-        /* STEP 3: COMPRESSED THESIS */
         .intro-text {
             font-size: 1.1rem;
             border-left: 4px solid var(--accent-green);
@@ -70,7 +68,6 @@
             margin: 30px 0;
         }
 
-        /* STEP 5: FEATURED DOMAINS */
         .section-title {
             font-size: 1.2rem;
             color: #f0f6fc;
@@ -92,20 +89,16 @@
         .featured-item strong { display: block; font-size: 1.1rem; color: var(--link-blue); }
         .featured-item span { font-size: 0.9rem; color: var(--text-muted); }
 
-        /* STEP 6 & 7: LIST STYLES */
-        .tighter-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .tighter-list li {
-            padding: 8px 0;
-            border-bottom: 1px solid rgba(48, 54, 61, 0.5);
-            display: flex;
-            justify-content: space-between;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
         }
 
-        /* STEP 4: ACQUISITION OPTION */
+        th { text-align: left; color: var(--text-muted); border-bottom: 2px solid var(--border-color); padding: 12px; font-size: 0.85rem; }
+        td { padding: 12px; border-bottom: 1px solid var(--border-color); font-size: 0.9rem; }
+        .domain-name { font-weight: 600; color: var(--link-blue); }
+
         .acquisition-box {
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid var(--border-color);
@@ -114,7 +107,9 @@
             margin: 40px 0;
         }
 
-        /* CHART & THESIS SCROLL */
+        .growth-chart-container { margin: 30px 0; text-align: center; }
+        .growth-chart-container img { width: 100%; border-radius: 6px; border: 1px solid var(--border-color); }
+
         .prospectus-viewer {
             background: #0d1117;
             border: 1px solid var(--border-color);
@@ -125,9 +120,6 @@
             margin-bottom: 20px;
             font-size: 0.9rem;
         }
-
-        .growth-chart-container { margin: 30px 0; text-align: center; }
-        .growth-chart-container img { width: 100%; border-radius: 6px; border: 1px solid var(--border-color); }
 
         .btn-pdf {
             display: inline-block;
@@ -156,7 +148,6 @@
             cursor: pointer;
             width: 100%;
             max-width: 400px;
-            font-size: 1rem;
         }
 
         input[type="email"] {
@@ -186,7 +177,6 @@
     <header>
         <h1>THE POWER ECONOMY</h1>
         <p class="hero-sub">Category-defining domains for behind-the-meter AI infrastructure.</p>
-        
         <ul class="designed-for">
             <li>Energy-backed compute platforms</li>
             <li>Data center infrastructure operators</li>
@@ -234,13 +224,27 @@
     </div>
 
     <h3 class="section-title">Selected Portfolio Valuation Context</h3>
-    <ul class="tighter-list">
-        <li><span>BehindTheMeterPower.com</span> <strong>$125K–$185K</strong></li>
-        <li><span>BehindTheMeterAI.com</span> <strong>$85K–$145K</strong></li>
-        <li><span>EnergyAllocation.com</span> <strong>$45K</strong></li>
-        <li><span>BtmCompute.com</span> <strong>$75K–$125K</strong></li>
-        <li><span>ThePowerEconomy.com</span> <strong>$45K–$85K</strong></li>
-    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Domain Asset</th>
+                <th>Target Valuation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="domain-name">BehindTheMeterPower.com</td><td>$125K–$185K</td></tr>
+            <tr><td class="domain-name">BehindTheMeterAI.com</td><td>$85K–$145K</td></tr>
+            <tr><td class="domain-name">EnergyAllocation.com</td><td>$45K</td></tr>
+            <tr><td class="domain-name">BtmCompute.com</td><td>$75K–$125K</td></tr>
+            <tr><td class="domain-name">ThePowerEconomy.com</td><td>$45K–$85K</td></tr>
+            <tr><td class="domain-name">BehindTheMeterSMR.com</td><td>$65K–$110K</td></tr>
+            <tr><td class="domain-name">BtmCFE.com</td><td>$30K–$55K</td></tr>
+            <tr><td class="domain-name">PowerAllocation.com</td><td>$25K–$45K</td></tr>
+            <tr><td class="domain-name">GigaBaseload.com</td><td>$35K</td></tr>
+            <tr><td class="domain-name">PowerGridCompute.com</td><td>$20K–$40K</td></tr>
+            <tr><td class="domain-name">Baseload247.com</td><td>$15K–$35K</td></tr>
+        </tbody>
+    </table>
     <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 15px;">Additional portfolio assets available upon inquiry.</p>
 
     <div class="acquisition-box">
@@ -257,7 +261,6 @@
     <div class="prospectus-viewer">
         <h4 style="color:var(--link-blue); margin-top: 0;">STRATEGIC CONTEXT</h4>
         <p>Transitioning hyperscale AI to Behind-the-Meter (BTM) infrastructure represents the most significant shift in data center architecture since the cloud. Faced with the Grid Wall, hyperscalers must co-locate energy generation directly with compute clusters to achieve 24/7 uptime. Control of these assets allows an entity to dominate the narrative around industrial load management and energy-integrated compute.</p>
-        <p>This portfolio secures the semantic authority for the next decade of power-integrated compute. By owning the Allocation and Baseload categories, an acquirer controls the primary narrative of the energy-compute bottleneck.</p>
     </div>
 
     <a href="the-power-economy.pdf" class="btn-pdf">View Full Prospectus (optional)</a>
@@ -265,7 +268,6 @@
     <div class="cta-section">
         <h3 style="margin-top: 0; color: #f0f6fc;">Acquisition Inquiry</h3>
         <p style="font-size: 0.9rem; margin-bottom: 25px;">For strategic acquisition discussions, individual domain interest, or portfolio-level inquiries, contact:</p>
-        
         <form action="https://formspree.io/f/maqlrnnj" method="POST" style="display: flex; flex-direction: column; align-items: center;">
             <input type="email" name="email" placeholder="Corporate Email Address" required>
             <button type="submit" class="btn-action">Submit Inquiry</button>
@@ -274,7 +276,7 @@
     </div>
 
     <div class="safe-harbor">
-        <strong>SAFE HARBOR STATEMENT:</strong> Forward-looking statements regarding digital asset valuations are professional estimates based on 2026 industrial energy trends. Portfolio valuations represent a projected infrastructure market cap shift, not individual domain liquidity. The seller assumes no obligation to update this information.
+        <strong>SAFE HARBOR STATEMENT:</strong> Forward-looking statements regarding digital asset valuations are professional estimates based on 2026 industrial energy trends. Portfolio valuations represent a projected infrastructure market cap shift, not individual domain liquidity.
     </div>
 </div>
 
