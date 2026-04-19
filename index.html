@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Power Economy | Sovereign BTM Stack</title>
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9789G2RE6F"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -9,78 +13,148 @@
       gtag('config', 'G-9789G2RE6F');
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Power Economy | Sovereign AI & BTM Infrastructure</title>
-    
-    <meta name="description" content="Institutional prospectus for BTM energy and Sovereign AI Compute assets.">
-    <meta name="keywords" content="BTM Energy, Power Allocation, SMR AI, Sovereign Compute, Data Center Energy, The Power Economy">
-    
     <style>
-        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: #e1e4e8; max-width: 1100px; margin: 0 auto; padding: 40px 20px; background-color: #0d1117; }
-        header { text-align: center; margin-bottom: 40px; border-bottom: 1px solid #30363d; padding-bottom: 30px; }
-        h1 { color: #238636; font-size: 3.2em; margin-bottom: 5px; letter-spacing: -1.5px; }
-        .thesis { font-size: 1.25em; color: #8b949e; max-width: 850px; margin: 0 auto; }
-        
-        /* Prospectus Embed Section */
-        .prospectus-viewer { margin: 40px 0; border: 1px solid #30363d; border-radius: 12px; overflow: hidden; background: #161b22; }
-        .prospectus-viewer iframe { width: 100%; height: 600px; border: none; }
-        .viewer-header { background: #010409; padding: 15px; border-bottom: 1px solid #30363d; display: flex; justify-content: space-between; align-items: center; }
-        .viewer-title { color: #58a6ff; font-weight: bold; font-size: 0.9em; text-transform: uppercase; }
-        
-        .cta-container { margin: 20px 0; display: flex; justify-content: center; }
-        .btn-download { background: #238636; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: 0.2s; font-size: 0.9em; }
-        .btn-download:hover { background: #2ea043; transform: translateY(-2px); }
+        :root {
+            --bg-color: #0d1117;
+            --container-bg: #161b22;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent-green: #238636;
+            --accent-green-hover: #2ea043;
+            --border-color: #30363d;
+            --link-blue: #58a6ff;
+        }
 
-        .asset-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-top: 40px; }
-        .card { background: #161b22; padding: 30px; border-radius: 12px; border: 1px solid #30363d; transition: 0.3s; }
-        .card:hover { border-color: #238636; transform: translateY(-5px); }
-        .card h3 { margin-top: 0; color: #58a6ff; font-size: 1.3em; margin-bottom: 10px; }
-        .tag { display: inline-block; background: #238636; color: white; font-size: 0.7em; padding: 2px 8px; border-radius: 4px; margin-bottom: 10px; text-transform: uppercase; }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
 
-        .form-section { background: #010409; color: white; padding: 50px; border-radius: 12px; margin-top: 50px; border: 1px solid #238636; }
-        input, textarea { width: 100%; padding: 14px; margin: 12px 0; border-radius: 6px; border: 1px solid #30363d; background: #0d1117; color: white; box-sizing: border-box; }
-        .submit-btn { background: #238636; color: white; padding: 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; font-size: 1.2em; text-transform: uppercase; }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 40px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 { font-size: 1.8rem; color: #f0f6fc; margin: 0; text-transform: uppercase; }
+        .subtitle { color: var(--text-muted); font-size: 1rem; margin-top: 8px; }
+
+        .thesis-box {
+            background: rgba(35, 134, 54, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th { text-align: left; color: var(--text-muted); border-bottom: 2px solid var(--border-color); padding: 12px; }
+        td { padding: 12px; border-bottom: 1px solid var(--border-color); }
+        .domain-name { font-weight: 600; color: var(--link-blue); }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .bulk-price {
+            color: var(--accent-green);
+            font-weight: 800;
+            font-size: 1.8rem;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            background-color: var(--accent-green);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .safe-harbor {
+            margin-top: 50px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-align: justify;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
 
+<div class="container">
     <header>
-        <h1>🏛️ THE POWER ECONOMY</h1>
-        <p class="thesis">Infrastructure Acquisition Portal: Defining the <strong>Behind-the-Meter (BTM)</strong> and <strong>Sovereign AI</strong> convergence.</p>
+        <h1>The Sovereign BTM Stack</h1>
+        <p class="subtitle">Industrial Digital Infrastructure Assets</p>
     </header>
 
-    <div class="prospectus-viewer">
-        <div class="viewer-header">
-            <span class="viewer-title">Executive Prospectus v2.0</span>
-            <a href="the-power-economy.pdf" class="btn-download" download>Download PDF</a>
-        </div>
-        <iframe src="the-power-economy.pdf#toolbar=0" type="application/pdf"></iframe>
+    <div class="thesis-box">
+        <strong>Strategic Thesis:</strong> Transitioning hyperscale AI to Behind-the-Meter (BTM) infrastructure.
     </div>
 
-    <div class="asset-grid">
-        <div class="card"><span class="tag">Category Parent</span><h3>behindthemeterpower.com</h3><p>Definitive brand for the $200B off-grid energy transition.</p></div>
-        <div class="card"><span class="tag">Logic Layer</span><h3>powerallocation.com</h3><p>Critical load-balancing terminology for private AI microgrids.</p></div>
-        <div class="card"><span class="tag">AI Infrastructure</span><h3>behindthemeterai.com</h3><p>Hyperscale AI clusters co-located with private generation.</p></div>
-        <div class="card"><span class="tag">Solution Layer</span><h3>Btmcompute.com</h3><p>Hardware integration for data centers bypassing utility walls.</p></div>
-        <div class="card"><span class="tag">Atomic Layer</span><h3>behindthemetersmr.com</h3><p>The standard for co-locating SMRs at the point of compute.</p></div>
-        <div class="card"><span class="tag">Macro Hub</span><h3>thepowereconomy.com</h3><p>Institutional hub for the energy-AI investment strategy.</p></div>
-        <div class="card"><span class="tag">Hybrid Hub</span><h3>powergridcompute.com</h3><p>Infrastructure for grid-tied and islanded compute clusters.</p></div>
-        <div class="card"><span class="tag">Reliability Layer</span><h3>baseload247.com</h3><p>Mission-critical 24/7 uptime branding for sovereign energy.</p></div>
-        <div class="card"><span class="tag">Compliance Layer</span><h3>btmcfe.com</h3><p>Tracking Carbon-Free Energy (CFE) for institutional ESG.</p></div>
-    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Domain Asset</th>
+                <th>Market Role</th>
+                <th>Target Valuation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="domain-name">behindthemeterpower.com</td><td>Primary Category Parent</td><td>$125k – $185k</td></tr>
+            <tr><td class="domain-name">powerallocation.com</td><td>Load Management</td><td>$85k – $185k</td></tr>
+            <tr><td class="domain-name">energyallocation.com</td><td>Systemic Logic</td><td>$45,000</td></tr>
+            <tr><td class="domain-name">gigabaseload.com</td><td>Industrial Branding</td><td>$35,000</td></tr>
+            <tr><td class="domain-name">thepowereconomy.com</td><td>Portfolio Anchor</td><td>$45k – $85k</td></tr>
+        </tbody>
+    </table>
 
-    <section class="form-section">
-        <h2>ACQUISITION INQUIRY</h2>
+    <div class="cta-section">
+        <span class="bulk-price">Bulk Buyout: $395,000</span>
         <form action="https://formspree.io/f/maqlrnnj" method="POST">
-            <input type="email" name="email" required placeholder="Email">
-            <textarea name="message" rows="4" placeholder="Offer details or request for full portfolio buyout..."></textarea>
-            <button type="submit" class="submit-btn">Submit Formal Inquiry</button>
+            <input type="email" name="email" placeholder="Corporate Email" required style="padding: 12px; margin-bottom: 10px; width: 300px; border-radius: 4px; border: 1px solid #30363d; background: #0d1117; color: white;">
+            <br>
+            <button type="submit" class="btn">Request Full Prospectus</button>
         </form>
-    </section>
+    </div>
+
+    <div class="safe-harbor">
+        <strong>SAFE HARBOR:</strong> Forward-looking statements based on 2026 trends. Estimates only; no guarantee of sale price.
+    </div>
+</div>
 
 </body>
 </html>
-   
         
     
