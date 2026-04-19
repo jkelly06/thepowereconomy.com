@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Power Economy | Sovereign BTM Stack</title>
+    <title>THE POWER ECONOMY | Sovereign BTM Stack</title>
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9789G2RE6F"></script>
     <script>
@@ -35,112 +35,140 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
             background: var(--container-bg);
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            padding: 30px;
+            padding: 40px;
             box-shadow: 0 8px 24px rgba(0,0,0,0.5);
         }
 
+        /* STEP 1: HERO SECTION */
         header {
-            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 30px;
             margin-bottom: 30px;
         }
 
-        h1 { font-size: 1.8rem; color: #f0f6fc; margin: 0; text-transform: uppercase; letter-spacing: 1px; }
-        .subtitle { color: var(--text-muted); font-size: 1rem; margin-top: 8px; }
+        h1 { font-size: 2.2rem; color: #f0f6fc; margin: 0; letter-spacing: 2px; }
+        .hero-sub { font-size: 1.2rem; color: var(--link-blue); margin-top: 10px; font-weight: 500; }
+        
+        .designed-for {
+            margin: 20px 0;
+            padding: 0;
+            list-style: none;
+            font-size: 0.95rem;
+        }
+        .designed-for li::before { content: "• "; color: var(--accent-green); font-weight: bold; }
 
-        /* SCROLLABLE PROSPECTUS VIEWER */
+        /* STEP 3: COMPRESSED THESIS */
+        .intro-text {
+            font-size: 1.1rem;
+            border-left: 4px solid var(--accent-green);
+            padding-left: 20px;
+            margin: 30px 0;
+        }
+
+        /* STEP 5: FEATURED DOMAINS */
+        .section-title {
+            font-size: 1.2rem;
+            color: #f0f6fc;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .featured-item strong { display: block; font-size: 1.1rem; color: var(--link-blue); }
+        .featured-item span { font-size: 0.9rem; color: var(--text-muted); }
+
+        /* STEP 6 & 7: LIST STYLES */
+        .tighter-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .tighter-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(48, 54, 61, 0.5);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* STEP 4: ACQUISITION OPTION */
+        .acquisition-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 25px;
+            margin: 40px 0;
+        }
+
+        /* CHART & THESIS SCROLL */
         .prospectus-viewer {
             background: #0d1117;
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            height: 350px;
+            height: 300px;
             overflow-y: scroll;
             padding: 25px;
-            margin-bottom: 30px;
-            font-size: 0.95rem;
-            scrollbar-width: thin;
-            scrollbar-color: var(--border-color) var(--bg-color);
+            margin-bottom: 20px;
+            font-size: 0.9rem;
         }
 
-        .prospectus-toolbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 10px;
-        }
+        .growth-chart-container { margin: 30px 0; text-align: center; }
+        .growth-chart-container img { width: 100%; border-radius: 6px; border: 1px solid var(--border-color); }
 
-        /* GROWTH CHART IMAGE - LINKED TO btm-growth.png */
-        .growth-chart-container {
-            margin: 40px 0;
-            text-align: center;
+        .btn-pdf {
+            display: inline-block;
+            color: var(--link-blue);
+            text-decoration: underline;
+            font-size: 0.9rem;
+            margin-bottom: 40px;
         }
-
-        .growth-chart-container img {
-            width: 100%;
-            max-width: 100%;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-        }
-
-        .thesis-section {
-            background: rgba(35, 134, 54, 0.05);
-            border-left: 4px solid var(--accent-green);
-            padding: 25px;
-            margin-bottom: 35px;
-        }
-
-        .thesis-section h2 {
-            font-size: 1.1rem;
-            color: #f0f6fc;
-            margin-top: 0;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-
-        /* ASSET TABLE */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        th { text-align: left; color: var(--text-muted); border-bottom: 2px solid var(--border-color); padding: 12px; font-size: 0.85rem; }
-        td { padding: 12px; border-bottom: 1px solid var(--border-color); font-size: 0.9rem; }
-        .domain-name { font-weight: 600; color: var(--link-blue); }
 
         .cta-section {
             text-align: center;
-            margin-top: 40px;
-            padding: 35px;
-            border: 1px solid var(--border-color);
+            background: rgba(35, 134, 54, 0.05);
+            padding: 40px;
             border-radius: 8px;
-            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--accent-green);
         }
 
-        .bulk-price { color: var(--accent-green); font-weight: 800; font-size: 2.2rem; display: block; margin-bottom: 20px; }
-
         .btn-action {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
             background-color: var(--accent-green);
             color: white;
-            padding: 12px 24px;
+            padding: 14px 32px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
             border: none;
             cursor: pointer;
-            transition: background 0.2s;
+            width: 100%;
+            max-width: 400px;
+            font-size: 1rem;
         }
 
-        .btn-action:hover { background-color: var(--accent-green-hover); }
+        input[type="email"] {
+            padding: 12px;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-color);
+            color: white;
+            margin-bottom: 15px;
+        }
 
         .safe-harbor {
             margin-top: 40px;
@@ -156,65 +184,93 @@
 
 <div class="container">
     <header>
-        <h1>The Sovereign BTM Stack</h1>
-        <p class="subtitle">Industrial Digital Assets for the Global Power Economy</p>
+        <h1>THE POWER ECONOMY</h1>
+        <p class="hero-sub">Category-defining domains for behind-the-meter AI infrastructure.</p>
+        
+        <ul class="designed-for">
+            <li>Energy-backed compute platforms</li>
+            <li>Data center infrastructure operators</li>
+            <li>Behind-the-meter power developers</li>
+            <li>SMR / carbon-free energy projects</li>
+        </ul>
     </header>
 
-    <div class="prospectus-toolbar">
-        <h3 style="margin:0; color:#f0f6fc;">Executive Prospectus</h3>
-        <a href="the-power-economy.pdf" class="btn-action" download style="font-size: 0.8rem;">Download Full PDF</a>
+    <div class="intro-text">
+        <p style="font-weight: bold; margin-bottom: 10px;">As AI scales, the constraint is no longer compute—it is power.</p>
+        <p>Global AI infrastructure is shifting behind-the-meter. As grid constraints intensify, power generation is moving closer to compute. This portfolio is aligned with the naming layer of that shift: baseload, allocation, BTM power, compliance, and energy-backed infrastructure.</p>
+    </div>
+
+    <h3 class="section-title">Best Fit For</h3>
+    <ul class="designed-for" style="margin-bottom: 40px;">
+        <li>Hyperscale and AI infrastructure platforms</li>
+        <li>Behind-the-meter energy developers</li>
+        <li>Data center and campus operators</li>
+        <li>Carbon-free / CFE infrastructure initiatives</li>
+        <li>Strategic buyers seeking category-level portfolio control</li>
+    </ul>
+
+    <h3 class="section-title">Featured Domains</h3>
+    <div class="featured-grid">
+        <div class="featured-item">
+            <strong>BehindTheMeterPower.com</strong>
+            <span>Primary category asset for BTM power positioning</span>
+        </div>
+        <div class="featured-item">
+            <strong>BehindTheMeterAI.com</strong>
+            <span>AI-power integration at the infrastructure layer</span>
+        </div>
+        <div class="featured-item">
+            <strong>EnergyAllocation.com</strong>
+            <span>Systemic logic and power allocation category asset</span>
+        </div>
+        <div class="featured-item">
+            <strong>BtmCompute.com</strong>
+            <span>Compute infrastructure aligned with on-site energy</span>
+        </div>
+        <div class="featured-item">
+            <strong>ThePowerEconomy.com</strong>
+            <span>Portfolio anchor for the broader market narrative</span>
+        </div>
+    </div>
+
+    <h3 class="section-title">Selected Portfolio Valuation Context</h3>
+    <ul class="tighter-list">
+        <li><span>BehindTheMeterPower.com</span> <strong>$125K–$185K</strong></li>
+        <li><span>BehindTheMeterAI.com</span> <strong>$85K–$145K</strong></li>
+        <li><span>EnergyAllocation.com</span> <strong>$45K</strong></li>
+        <li><span>BtmCompute.com</span> <strong>$75K–$125K</strong></li>
+        <li><span>ThePowerEconomy.com</span> <strong>$45K–$85K</strong></li>
+    </ul>
+    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 15px;">Additional portfolio assets available upon inquiry.</p>
+
+    <div class="acquisition-box">
+        <h3 style="margin-top: 0; color: #f0f6fc;">Portfolio Acquisition Option</h3>
+        <p>The full portfolio is available as a strategic acquisition for buyers seeking unified category control across behind-the-meter power, compute integration, baseload, and compliance.</p>
+        <p style="margin-bottom: 0; font-weight: bold; color: var(--accent-green);">Serious acquisition inquiries only — portfolio assets range from mid five-figure to premium strategic valuations.</p>
+    </div>
+
+    <h3 class="section-title">Supporting Market Context</h3>
+    <div class="growth-chart-container">
+        <img src="image_36c7a9.png" alt="Projected BTM Energy Growth 2026-2030">
     </div>
     
     <div class="prospectus-viewer">
-        <h4 style="color:var(--link-blue);">STRATEGIC THESIS</h4>
-        <p>Global AI infrastructure has pivoted Behind-the-Meter (BTM). Faced with the Grid Wall, hyperscalers must co-locate energy generation directly with compute clusters to achieve 24/7 uptime. This portfolio represents the primary digital real estate for the market shift toward grid-independent, carbon-free co-location. Control of these assets allows an entity to dominate the narrative around industrial load management and energy-integrated compute.</p>
-        
-        <h4 style="color:var(--link-blue);">INSTITUTIONAL BULK OPTION</h4>
-        <p>To prevent brand fragmentation, the full Sovereign Stack is available as a single acquisition, ensuring a unified Defensive Moat. This strategy ensures total narrative control across generation, compute logic, and institutional compliance.</p>
-        
-        <p><strong>Cumulative Individual Valuation:</strong> $485,000 - $830,000+</p>
+        <h4 style="color:var(--link-blue); margin-top: 0;">STRATEGIC CONTEXT</h4>
+        <p>Transitioning hyperscale AI to Behind-the-Meter (BTM) infrastructure represents the most significant shift in data center architecture since the cloud. Faced with the Grid Wall, hyperscalers must co-locate energy generation directly with compute clusters to achieve 24/7 uptime. Control of these assets allows an entity to dominate the narrative around industrial load management and energy-integrated compute.</p>
+        <p>This portfolio secures the semantic authority for the next decade of power-integrated compute. By owning the Allocation and Baseload categories, an acquirer controls the primary narrative of the energy-compute bottleneck.</p>
     </div>
 
-    <div class="growth-chart-container">
-        <img src="btm-growth.png" alt="Projected BTM Energy Growth 2026-2030">
-    </div>
-
-    <div class="thesis-section">
-        <h2>Industrial Thesis: The Grid-Compute Convergence</h2>
-        <p style="margin:0; font-size: 0.95rem; text-align: justify;">The primary constraint for AI hyperscalers is no longer chip availability, but industrial-scale energy distribution. Behind-the-Meter co-location is the only industrial solution for 24/7 uptime. This portfolio secures the semantic authority and operational category killers for the next decade of power-integrated compute. By owning the Allocation and Baseload categories, an acquirer controls the primary narrative of the energy-compute bottleneck.</p>
-    </div>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Domain Asset</th>
-                <th>Market Role</th>
-                <th>Target Valuation</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td class="domain-name">behindthemeterpower.com</td><td>Primary Category Parent</td><td>$125k – $185k</td></tr>
-            <tr><td class="domain-name">behindthemeterai.com</td><td>AI-Power Integration</td><td>$85k – $145k</td></tr>
-            <tr><td class="domain-name">energyallocation.com</td><td>Systemic Logic Category Killer</td><td>$45,000</td></tr>
-            <tr><td class="domain-name">gigabaseload.com</td><td>Industrial-Scale Branding</td><td>$35,000</td></tr>
-            <tr><td class="domain-name">Btmcompute.com</td><td>Infrastructure Layer</td><td>$75k – $125k</td></tr>
-            <tr><td class="domain-name">behindthemetersmr.com</td><td>Atomic/SMR Layer</td><td>$65k – $110k</td></tr>
-            <tr><td class="domain-name">thepowereconomy.com</td><td>Portfolio Anchor</td><td>$45k – $85k</td></tr>
-            <tr><td class="domain-name">btmcfe.com</td><td>Compliance / ESG Layer</td><td>$30k – $55k</td></tr>
-            <tr><td class="domain-name">powerallocation.com</td><td>Load Management</td><td>$25k – $45k</td></tr>
-            <tr><td class="domain-name">powergridcompute.com</td><td>Utility / Hybrid Hub</td><td>$20k – $40k</td></tr>
-            <tr><td class="domain-name">baseload247.com</td><td>Reliability Shorthand</td><td>$15k – $35k</td></tr>
-        </tbody>
-    </table>
+    <a href="the-power-economy.pdf" class="btn-pdf">View Full Prospectus (optional)</a>
 
     <div class="cta-section">
-        <div style="font-size: 1.1rem; color: #f0f6fc; margin-bottom: 5px;">Institutional Bulk Buyout Offer</div>
-        <span class="bulk-price">$395,000 USD</span>
+        <h3 style="margin-top: 0; color: #f0f6fc;">Acquisition Inquiry</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 25px;">For strategic acquisition discussions, individual domain interest, or portfolio-level inquiries, contact:</p>
         
-        <form action="https://formspree.io/f/maqlrnnj" method="POST" style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
-            <input type="email" name="email" placeholder="Corporate Email Address" required style="padding: 12px; width: 350px; border-radius: 6px; border: 1px solid #30363d; background: #0d1117; color: white;">
-            <button type="submit" class="btn-action" style="width: 350px;">Submit Acquisition Inquiry</button>
+        <form action="https://formspree.io/f/maqlrnnj" method="POST" style="display: flex; flex-direction: column; align-items: center;">
+            <input type="email" name="email" placeholder="Corporate Email Address" required>
+            <button type="submit" class="btn-action">Submit Inquiry</button>
         </form>
+        <p style="margin-top: 20px; font-weight: bold;">ceallo06@proton.me</p>
     </div>
 
     <div class="safe-harbor">
