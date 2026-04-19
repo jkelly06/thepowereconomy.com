@@ -1,5 +1,4 @@
-
-  <!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +23,6 @@
             --accent-green-hover: #2ea043;
             --border-color: #30363d;
             --link-blue: #58a6ff;
-            --chart-bar: #3fb950;
         }
 
         body {
@@ -33,100 +31,65 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 40px 20px;
+            padding: 20px;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
             background: var(--container-bg);
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            padding: 40px;
+            padding: 30px;
             box-shadow: 0 8px 24px rgba(0,0,0,0.5);
         }
 
         header {
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
             text-align: center;
+            margin-bottom: 30px;
         }
 
         h1 { font-size: 1.8rem; color: #f0f6fc; margin: 0; text-transform: uppercase; letter-spacing: 1px; }
         .subtitle { color: var(--text-muted); font-size: 1rem; margin-top: 8px; }
 
+        /* PROSPECTUS VIEWER */
+        .prospectus-viewer {
+            background: #0d1117;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            height: 400px;
+            overflow-y: scroll;
+            padding: 25px;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+
+        .prospectus-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        /* GROWTH CHART IMAGE */
+        .growth-chart-container {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .growth-chart-container img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
         .thesis-section {
             background: rgba(35, 134, 54, 0.05);
             border-left: 4px solid var(--accent-green);
-            padding: 25px;
-            margin-bottom: 35px;
-        }
-
-        .thesis-text { font-size: 0.95rem; text-align: justify; }
-
-        /* BTM GROWTH CHART STYLES */
-        .chart-container {
-            margin: 40px 0;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-        }
-
-        .chart-title {
-            text-align: center;
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: #f0f6fc;
-            margin-bottom: 25px;
-            text-transform: uppercase;
-        }
-
-        .chart-bars {
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-around;
-            height: 200px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .bar-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 15%;
-        }
-
-        .bar {
-            width: 100%;
-            background: var(--chart-bar);
-            border-radius: 4px 4px 0 0;
-            transition: height 1s ease-in-out;
-            position: relative;
-        }
-
-        .bar::after {
-            content: attr(data-value);
-            position: absolute;
-            top: -25px;
-            font-size: 0.75rem;
-            color: var(--text-main);
-            font-weight: bold;
-        }
-
-        .bar-label {
-            margin-top: 10px;
-            font-size: 0.75rem;
-            color: var(--text-muted);
-        }
-
-        .chart-footer {
-            margin-top: 15px;
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            text-align: center;
+            margin-bottom: 35px;
         }
 
         table {
@@ -150,21 +113,24 @@
 
         .bulk-price { color: var(--accent-green); font-weight: 800; font-size: 2.2rem; display: block; margin-bottom: 20px; }
 
-        .btn-submit {
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
             background-color: var(--accent-green);
             color: white;
-            padding: 14px 32px;
+            padding: 12px 24px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
             border: none;
             cursor: pointer;
-            width: 100%;
-            max-width: 380px;
+            transition: background 0.2s;
         }
 
+        .btn-action:hover { background-color: var(--accent-green-hover); }
+
         .safe-harbor {
-            margin-top: 50px;
+            margin-top: 40px;
             font-size: 0.7rem;
             color: var(--text-muted);
             text-align: justify;
@@ -181,33 +147,28 @@
         <p class="subtitle">Industrial Digital Assets for the Global Power Economy</p>
     </header>
 
-    <div class="thesis-section">
-        <div class="thesis-text">
-            The 2026 AI expansion has reached the "Grid Wall." Hyperscale compute is now constrained by energy distribution, not chip supply. <strong>Behind-the-Meter (BTM)</strong> co-location is the primary industrial response for 24/7 uptime. This portfolio secures the semantic real estate for this $195B+ market shift.
-        </div>
+    <div class="prospectus-header">
+        <h3 style="margin:0; color:#f0f6fc;">Executive Prospectus (Internal Draft)</h3>
+        <a href="the-power-economy.pdf" class="btn-action" download style="font-size: 0.8rem;">Download PDF</a>
+    </div>
+    
+    <div class="prospectus-viewer">
+        <h4>I. THE STRATEGIC THESIS</h4>
+        <p>As of 2026, the global AI infrastructure has moved "Behind-the-Meter" (BTM)[cite: 5]. As hyperscalers encounter the "Grid Wall," the ability to co-locate energy generation directly with compute clusters is the only path to 24/7 uptime[cite: 6]. This portfolio represents the primary digital real estate for the $195B+ market shift toward grid-independent, carbon-free energy co-location and sovereign AI infrastructure[cite: 7].</p>
+        
+        <h4>II. ASSET VALUATION TABLE</h4>
+        <p>Current individual valuations for core category assets range from $15,000 up to $185,000 depending on market role[cite: 9, 10]. Key infrastructure assets like <strong>behindthemeterpower.com</strong> ($125k–$185k) and <strong>behindthemeterai.com</strong> ($85k–$145k) serve as the foundation of the stack[cite: 9].</p>
+
+        <h4>III. INSTITUTIONAL BULK OPTION</h4>
+        <p>To prevent brand fragmentation, the full Sovereign Stack is available as a single comprehensive acquisition, ensuring a unified "Defensive Moat"[cite: 12, 13]. Advantage includes total narrative control across generation, compute logic, and compliance[cite: 16].</p>
     </div>
 
-    <div class="chart-container">
-        <div class="chart-title">Projected BTM Data Center Capacity (GW)</div>
-        <div class="chart-bars">
-            <div class="bar-wrapper">
-                <div class="bar" style="height: 25%;" data-value="12GW"></div>
-                <div class="bar-label">2023</div>
-            </div>
-            <div class="bar-wrapper">
-                <div class="bar" style="height: 45%;" data-value="28GW"></div>
-                <div class="bar-label">2024</div>
-            </div>
-            <div class="bar-wrapper">
-                <div class="bar" style="height: 70%;" data-value="52GW"></div>
-                <div class="bar-label">2025</div>
-            </div>
-            <div class="bar-wrapper">
-                <div class="bar" style="height: 100%; border: 2px solid #f0f6fc;" data-value="94GW"></div>
-                <div class="bar-label">2026 (EST)</div>
-            </div>
-        </div>
-        <div class="chart-footer">Source: Global Energy-Compute Convergence Report 2026</div>
+    <div class="growth-chart-container">
+        <img src="btm-growth.jpg" alt="Projected BTM Energy Growth 2026-2030">
+    </div>
+
+    <div class="thesis-section">
+        <p style="margin:0; font-size: 0.95rem;"><strong>Market Context:</strong> Data center capacity is projected to grow from 15 GW in 2026 to over 200 GW by 2030, driven by SMR integration and 24/7 CFE mandates.</p>
     </div>
 
     <table>
@@ -219,12 +180,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td class="domain-name">behindthemeterpower.com</td><td>Primary Category Parent</td><td>$125k – $185k</td></tr>
+            <tr><td class="domain-name">behindthemeterpower.com</td><td>Primary Category Parent</td><td>$125k – $185k [cite: 9]</td></tr>
             <tr><td class="domain-name">powerallocation.com</td><td>Load Management</td><td>$85k – $185k</td></tr>
-            <tr><td class="domain-name">behindthemeterai.com</td><td>AI-Power Integration</td><td>$85k – $145k</td></tr>
-            <tr><td class="domain-name">energyallocation.com</td><td>Systemic Infrastructure Logic</td><td>$45,000</td></tr>
+            <tr><td class="domain-name">behindthemeterai.com</td><td>AI-Power Integration</td><td>$85k – $145k [cite: 9]</td></tr>
+            <tr><td class="domain-name">energyallocation.com</td><td>Systemic Logic</td><td>$45,000</td></tr>
             <tr><td class="domain-name">gigabaseload.com</td><td>Industrial Branding</td><td>$35,000</td></tr>
-            <tr><td class="domain-name">thepowereconomy.com</td><td>Portfolio Anchor</td><td>$45k – $85k</td></tr>
+            <tr><td class="domain-name">thepowereconomy.com</td><td>Portfolio Anchor</td><td>$45k – $85k [cite: 9]</td></tr>
         </tbody>
     </table>
 
@@ -234,16 +195,15 @@
         
         <form action="https://formspree.io/f/maqlrnnj" method="POST" style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
             <input type="email" name="email" placeholder="Corporate Email Address" required style="padding: 12px; width: 350px; border-radius: 6px; border: 1px solid #30363d; background: #0d1117; color: white;">
-            <button type="submit" class="btn-submit">Request Executive Prospectus</button>
+            <button type="submit" class="btn-action" style="width: 350px; justify-content: center;">Submit Formal Inquiry</button>
         </form>
-        <a href="the-power-economy.pdf" style="margin-top: 15px; display: block; color: var(--link-blue); font-size: 0.85rem; text-decoration: underline;">Direct Download Preliminary Prospectus (PDF)</a>
     </div>
 
     <div class="safe-harbor">
-        <strong>SAFE HARBOR STATEMENT:</strong> Forward-looking statements regarding digital asset valuations are professional estimates based on 2026 industrial energy trends. These figures are targets and do not constitute a guarantee of final sale price.
+        <strong>SAFE HARBOR STATEMENT:</strong> Forward-looking statements regarding digital asset valuations are professional estimates based on 2026 industrial energy trends. Actual market value for the $195B+ shift represents projected infrastructure market cap, not individual domain liquidity.
     </div>
 </div>
 
 </body>
-</html>      
+</html> 
     
