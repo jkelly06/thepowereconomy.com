@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -52,35 +52,38 @@
         h1 { font-size: 1.8rem; color: #f0f6fc; margin: 0; text-transform: uppercase; letter-spacing: 1px; }
         .subtitle { color: var(--text-muted); font-size: 1rem; margin-top: 8px; }
 
-        /* PROSPECTUS VIEWER */
+        /* SCROLLABLE PROSPECTUS VIEWER */
         .prospectus-viewer {
             background: #0d1117;
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            height: 400px;
+            height: 350px;
             overflow-y: scroll;
             padding: 25px;
             margin-bottom: 30px;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+            scrollbar-width: thin;
+            scrollbar-color: var(--border-color) var(--bg-color);
         }
 
-        .prospectus-header {
+        .prospectus-toolbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 10px;
         }
 
         /* GROWTH CHART IMAGE */
         .growth-chart-container {
-            margin-bottom: 40px;
+            margin: 40px 0;
             text-align: center;
         }
 
         .growth-chart-container img {
             width: 100%;
+            max-width: 100%;
             border-radius: 8px;
             border: 1px solid var(--border-color);
         }
@@ -92,6 +95,7 @@
             margin-bottom: 35px;
         }
 
+        /* ASSET TABLE */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -116,6 +120,7 @@
         .btn-action {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             background-color: var(--accent-green);
             color: white;
             padding: 12px 24px;
@@ -131,7 +136,7 @@
 
         .safe-harbor {
             margin-top: 40px;
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             color: var(--text-muted);
             text-align: justify;
             border-top: 1px solid var(--border-color);
@@ -144,31 +149,30 @@
 <div class="container">
     <header>
         <h1>The Sovereign BTM Stack</h1>
-        <p class="subtitle">Industrial Digital Assets for the Global Power Economy</p>
+        <p class="subtitle">Institutional Digital Assets for the Global Power Economy</p>
     </header>
 
-    <div class="prospectus-header">
-        <h3 style="margin:0; color:#f0f6fc;">Executive Prospectus (Internal Draft)</h3>
-        <a href="the-power-economy.pdf" class="btn-action" download style="font-size: 0.8rem;">Download PDF</a>
+    <div class="prospectus-toolbar">
+        <h3 style="margin:0; color:#f0f6fc;">Executive Prospectus</h3>
+        <a href="the-power-economy.pdf" class="btn-action" download style="font-size: 0.8rem;">Download Full PDF</a>
     </div>
     
     <div class="prospectus-viewer">
-        <h4>I. THE STRATEGIC THESIS</h4>
-        <p>As of 2026, the global AI infrastructure has moved "Behind-the-Meter" (BTM)[cite: 5]. As hyperscalers encounter the "Grid Wall," the ability to co-locate energy generation directly with compute clusters is the only path to 24/7 uptime[cite: 6]. This portfolio represents the primary digital real estate for the $195B+ market shift toward grid-independent, carbon-free energy co-location and sovereign AI infrastructure[cite: 7].</p>
+        <h4 style="color:var(--link-blue);">I. THE STRATEGIC THESIS</h4>
+        <p>As of 2026, global AI infrastructure has pivoted "Behind-the-Meter" (BTM). Faced with the "Grid Wall," hyperscalers must co-locate energy generation directly with compute clusters to achieve 24/7 uptime[cite: 5, 6]. This portfolio represents the primary digital real estate for a $195B+ market shift toward grid-independent, carbon-free co-location[cite: 7].</p>
         
-        <h4>II. ASSET VALUATION TABLE</h4>
-        <p>Current individual valuations for core category assets range from $15,000 up to $185,000 depending on market role[cite: 9, 10]. Key infrastructure assets like <strong>behindthemeterpower.com</strong> ($125k–$185k) and <strong>behindthemeterai.com</strong> ($85k–$145k) serve as the foundation of the stack[cite: 9].</p>
-
-        <h4>III. INSTITUTIONAL BULK OPTION</h4>
-        <p>To prevent brand fragmentation, the full Sovereign Stack is available as a single comprehensive acquisition, ensuring a unified "Defensive Moat"[cite: 12, 13]. Advantage includes total narrative control across generation, compute logic, and compliance[cite: 16].</p>
+        <h4 style="color:var(--link-blue);">II. INSTITUTIONAL BULK OPTION</h4>
+        <p>To prevent brand fragmentation, the 9-domain Sovereign Stack is available as a single acquisition, ensuring a unified "Defensive Moat"[cite: 12, 13]. Advantage includes total narrative control across generation, compute logic, and compliance[cite: 16].</p>
+        
+        <p><strong>Cumulative Individual Valuation:</strong> $485,000 - $830,000+ [cite: 14]</p>
     </div>
 
     <div class="growth-chart-container">
-        <img src="btm-growth.jpg" alt="Projected BTM Energy Growth 2026-2030">
+        <img src="btm-growth.png" alt="Projected BTM Energy Growth 2026-2030">
     </div>
 
     <div class="thesis-section">
-        <p style="margin:0; font-size: 0.95rem;"><strong>Market Context:</strong> Data center capacity is projected to grow from 15 GW in 2026 to over 200 GW by 2030, driven by SMR integration and 24/7 CFE mandates.</p>
+        <p style="margin:0; font-size: 0.95rem;"><strong>Strategic Moat:</strong> This portfolio secures the semantic authority for the Energy-Compute convergence, covering SMR baseload, compliance, and load management[cite: 9, 10, 16].</p>
     </div>
 
     <table>
@@ -181,11 +185,14 @@
         </thead>
         <tbody>
             <tr><td class="domain-name">behindthemeterpower.com</td><td>Primary Category Parent</td><td>$125k – $185k [cite: 9]</td></tr>
-            <tr><td class="domain-name">powerallocation.com</td><td>Load Management</td><td>$85k – $185k</td></tr>
             <tr><td class="domain-name">behindthemeterai.com</td><td>AI-Power Integration</td><td>$85k – $145k [cite: 9]</td></tr>
-            <tr><td class="domain-name">energyallocation.com</td><td>Systemic Logic</td><td>$45,000</td></tr>
-            <tr><td class="domain-name">gigabaseload.com</td><td>Industrial Branding</td><td>$35,000</td></tr>
+            <tr><td class="domain-name">Btmcompute.com</td><td>Infrastructure Layer</td><td>$75k – $125k [cite: 9]</td></tr>
+            <tr><td class="domain-name">behindthemetersmr.com</td><td>Atomic/SMR Layer</td><td>$65k – $110k [cite: 9]</td></tr>
             <tr><td class="domain-name">thepowereconomy.com</td><td>Portfolio Anchor</td><td>$45k – $85k [cite: 9]</td></tr>
+            <tr><td class="domain-name">btmcfe.com</td><td>Compliance / ESG Layer</td><td>$30k – $55k [cite: 10]</td></tr>
+            <tr><td class="domain-name">powerallocation.com</td><td>Load Management</td><td>$25k – $45k [cite: 9]</td></tr>
+            <tr><td class="domain-name">powergridcompute.com</td><td>Utility / Hybrid Hub</td><td>$20k – $40k [cite: 9]</td></tr>
+            <tr><td class="domain-name">baseload247.com</td><td>Reliability Shorthand</td><td>$15k – $35k [cite: 10]</td></tr>
         </tbody>
     </table>
 
@@ -195,15 +202,15 @@
         
         <form action="https://formspree.io/f/maqlrnnj" method="POST" style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
             <input type="email" name="email" placeholder="Corporate Email Address" required style="padding: 12px; width: 350px; border-radius: 6px; border: 1px solid #30363d; background: #0d1117; color: white;">
-            <button type="submit" class="btn-action" style="width: 350px; justify-content: center;">Submit Formal Inquiry</button>
+            <button type="submit" class="btn-action" style="width: 350px;">Submit Acquisition Inquiry</button>
         </form>
     </div>
 
     <div class="safe-harbor">
-        <strong>SAFE HARBOR STATEMENT:</strong> Forward-looking statements regarding digital asset valuations are professional estimates based on 2026 industrial energy trends. Actual market value for the $195B+ shift represents projected infrastructure market cap, not individual domain liquidity.
+        <strong>SAFE HARBOR STATEMENT:</strong> Forward-looking statements regarding digital asset valuations are professional estimates based on 2026 industrial energy trends[cite: 17]. Portfolio valuations represent a projected infrastructure market cap shift, not individual domain liquidity[cite: 7, 14].
     </div>
 </div>
 
 </body>
-</html> 
+</html>
     
