@@ -6,7 +6,7 @@
 [ 📧 Inquire: john@thepowereconomy.com] [ 🌐 Live Portal: thepowereconomy.com ]
 
 # thepowereconomy.com
-The Power Economy | Sovereign Infrastructure &amp; BTM Compute Assets. Strategic domain prospectus defining the 2026 Energy-AI convergence. 📧 ceallo6@proton.me
+The Power Economy | Sovereign Infrastructure &amp; BTM Compute Assets. Strategic domain prospectus defining the 2026 Energy-AI convergence. 📧 john@thepowereconomy.com
 Strategic Thesis: The Power Economy
 As the global AI sector hits the "Grid Wall," energy has transitioned from an operational expense to a strategic barrier to entry. With interconnection wait times for traditional utilities exceeding 7 years, the market has pivoted to Behind-the-Meter (BTM) solutions.
 
